@@ -21,7 +21,7 @@ RF24 radio(CE_PIN, CSN_PIN);
 // Address that will be the pipeline
 const uint64_t address = 0xE8E8F0F0E1LL;
 
-// 11 Byte struct for the controller (need to add long/lattitude and 2 switches which is about 10 bytes so 21 total)
+// 11 Byte struct for the controller (2 more Bytes needed for the function of 2 other switches.)
 typedef struct Controller{
   int32_t   x;
   int32_t   y;
