@@ -25,7 +25,7 @@ byte top_button, bottom_button, emergency_switch;
 
 RF24 radio(CE_PIN, CSN_PIN);
 
-// 11 Byte struct for the controller (need to add long/lattitude and 2 switches which is about 10 bytes so 21 total)
+// 11 Byte struct for the controller (2 more Bytes needed for the function of 2 other switches.)
 typedef struct Controller{
   int32_t   x;
   int32_t   y;
